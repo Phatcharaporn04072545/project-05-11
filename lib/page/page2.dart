@@ -18,7 +18,7 @@ class _Page2State extends State<Page2> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "คำพูด",
+          "กิน",
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,

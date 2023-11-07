@@ -4,15 +4,15 @@ class Page3 extends StatefulWidget {
   const Page3({super.key});
 
   @override
-  State<Page3> createState() => _Page1State();
+  State<Page3> createState() => _Page3State();
 }
 
-class _Page1State extends State<Page3> {
+class _Page3State extends State<Page3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("คำพูด",
+        title: Text("ความรู้สึก",
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
         centerTitle: true,
         backgroundColor: Colors.green,
@@ -31,9 +31,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/สวัสดี.jpg", width: 200, height: 150),
+                  Image.asset("images/โกรธ.png", width: 200, height: 150),
                   Text(
-                    "สวัสดี",
+                    "โกรธ",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -43,9 +43,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/ลาก่อน.png", width: 200, height: 150),
+                  Image.asset("images/ง่วง.png", width: 200, height: 150),
                   Text(
-                    "ลาก่อน",
+                    "ง่วง",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -55,9 +55,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/ขอบคุณ.png", width: 200, height: 150),
+                  Image.asset("images/คัน.png", width: 200, height: 150),
                   Text(
-                    "ขอบคุณ",
+                    "คัน",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -67,9 +67,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/ใช่.png", width: 200, height: 150),
+                  Image.asset("images/กลัว.png", width: 200, height: 150),
                   Text(
-                    "ใช่",
+                    "กลัว",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -79,9 +79,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/ไม่ใช่.png", width: 200, height: 150),
+                  Image.asset("images/เศร้า.png", width: 200, height: 150),
                   Text(
-                    "ไม่ใช่",
+                    "เศร้า",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -91,9 +91,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/ไม่เข้าใจ.png", width: 200, height: 150),
+                  Image.asset("images/มีความสุข.png", width: 200, height: 150),
                   Text(
-                    "ไม่เข้าใจ",
+                    "มีความสุข",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -103,9 +103,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/เข้าใจ.png", width: 200, height: 150),
+                  Image.asset("images/หนาว.png", width: 200, height: 150),
                   Text(
-                    "เข้าใจ",
+                    "หนาว",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -115,9 +115,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/กี่โมงแล้ว.png", width: 200, height: 150),
+                  Image.asset("images/ร้อน.png", width: 200, height: 150),
                   Text(
-                    "กี่โมงแล้ว",
+                    "ร้อน",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -127,9 +127,9 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/วันอะไร.png", width: 200, height: 150),
+                  Image.asset("images/เครียด.png", width: 200, height: 150),
                   Text(
-                    "วันนี้วันอะไร",
+                    "เครียด",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],
@@ -139,9 +139,45 @@ class _Page1State extends State<Page3> {
               onPressed: () {},
               child: Column(
                 children: [
-                  Image.asset("images/พูดดัง.png", width: 200, height: 150),
+                  Image.asset("images/เบื่อ.png", width: 200, height: 150),
                   Text(
-                    "พูดดังหน่อย",
+                    "เบื่อ",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/ตกใจ.png", width: 200, height: 150),
+                  Text(
+                    "ตกใจ",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/ปวด.png", width: 200, height: 150),
+                  Text(
+                    "ปวด",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/หิว.png", width: 200, height: 150),
+                  Text(
+                    "หิว",
                     style: TextStyle(fontSize: 30, color: Colors.black),
                   ),
                 ],

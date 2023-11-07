@@ -1,118 +1,156 @@
 import 'package:flutter/material.dart';
 
-class Page1 extends StatelessWidget {
-  final Color buttonColor = Colors.blueGrey; // สีของปุ่ม
+class Page1 extends StatefulWidget {
+  const Page1({super.key});
 
+  @override
+  State<Page1> createState() => _Page1State();
+}
+
+class _Page1State extends State<Page1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('คำพูดทั่วไป'),
+        title: Text("คำพูด",
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+        centerTitle: true,
+        backgroundColor: Colors.green,
       ),
-      body: ListView(
-        padding: EdgeInsets.all(16),
-        children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "สวัสดี" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('สวัสดี'),
+      body: SingleChildScrollView(
+        child: GridView.count(
+          padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          physics: NeverScrollableScrollPhysics(),
+          crossAxisCount: 2,
+          childAspectRatio: 0.9,
+          shrinkWrap: true,
+          children: [
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/สวัสดี.jpg", width: 200, height: 150),
+                  Text(
+                    "สวัสดี",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-              SizedBox(width: 16),
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "ลาก่อน" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('ลาก่อน'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/ลาก่อน.png", width: 200, height: 150),
+                  Text(
+                    "ลาก่อน",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-            ],
-          ),
-          SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "ใช่" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('ใช่'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/ขอบคุณ.png", width: 200, height: 150),
+                  Text(
+                    "ขอบคุณ",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-              SizedBox(width: 16),
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "ไม่ใช่" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('ไม่ใช่'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/ใช่.png", width: 200, height: 150),
+                  Text(
+                    "ใช่",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-            ],
-          ),
-          SizedBox(height: 16),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "เข้าใจ" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('เข้าใจ'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/ไม่ใช่.png", width: 200, height: 150),
+                  Text(
+                    "ไม่ใช่",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-              SizedBox(width: 16),
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "ไม่เข้าใจ" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('ไม่เข้าใจ'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/ไม่เข้าใจ.png", width: 200, height: 150),
+                  Text(
+                    "ไม่เข้าใจ",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-            ],
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "กี่โมงแล้ว" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('กี่โมงแล้ว'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/เข้าใจ.png", width: 200, height: 150),
+                  Text(
+                    "เข้าใจ",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-              SizedBox(width: 16),
-              ElevatedButton(
-                onPressed: () {
-                  print('ElevatedButton "วันนี้วันอะไร" ถูกคลิก');
-                },
-                style: ElevatedButton.styleFrom(
-                  primary: buttonColor,
-                ),
-                child: Text('วันนี้วันอะไร'),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/กี่โมงแล้ว.png", width: 200, height: 150),
+                  Text(
+                    "กี่โมงแล้ว",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
               ),
-            ],
-          ),
-          SizedBox(height: 16),
-        ],
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/วันอะไร.png", width: 200, height: 150),
+                  Text(
+                    "วันนี้วันอะไร",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+            OutlinedButton(
+              onPressed: () {},
+              child: Column(
+                children: [
+                  Image.asset("images/พูดดัง.png", width: 200, height: 150),
+                  Text(
+                    "พูดดังหน่อย",
+                    style: TextStyle(fontSize: 30, color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
+      backgroundColor: Colors.white,
     );
   }
 }
